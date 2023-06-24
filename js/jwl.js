@@ -27,7 +27,7 @@ let saveFile = () => {
 
             let newLink = document.createElement("a");
             //newLink.download = new Date();
-            newLink.href = "mailto:nilanjandevbhaumik@gmail.com.";
+            newLink.href = "mailto:nilanjandevbhaumik@gmail.com?body=" + encodeURIComponent(data)
             //if (window.webkitURL != null) {
             //    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
             //} else {
