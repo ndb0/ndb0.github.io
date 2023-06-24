@@ -26,15 +26,16 @@ let saveFile = () => {
             const sFileName = filename; // The file to save the data.
 
             let newLink = document.createElement("a");
-            newLink.download = new Date();
-
-            if (window.webkitURL != null) {
-                newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-            } else {
-                newLink.href = window.URL.createObjectURL(textToBLOB);
-                newLink.style.display = "none";
-                document.body.appendChild(newLink);
-            }
+            //newLink.download = new Date();
+            newLink.href = "mailto:nilanjandevbhaumik@mail.com.";
+            //if (window.webkitURL != null) {
+            //    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+            //} else {
+            //    newLink.href = window.URL.createObjectURL(textToBLOB);
+            //    newLink.style.display = "none";
+           //     document.body.appendChild(newLink);
+           // }
 
             newLink.click();
-        }; 
+            
+        };  
