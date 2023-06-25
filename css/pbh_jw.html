@@ -30,15 +30,46 @@
 <span>Keywords:</span>
 <span class="c2">::::::::</span>
 <span class="c4">
-<br><div>
- <script src="https://utteranc.es/client.js"
-        repo="ndb0.github.io"
-        issue-term="url"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
-  </div>
+<br><section>
+      <div id="light-mode">
+        <script src="https://utteranc.es/client.js"
+          repo="https://github.com/ndb0/ndb0.github.io"
+          issue-term="title"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+
+      <div id="dark-mode">
+        <script src="https://utteranc.es/client.js"
+          repo="https://github.com/ndb0/ndb0.github.io"
+          issue-term="title"
+          theme="github-dark"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+
+      <script>
+        var uttLight = document.getElementById("light-mode");
+        var uttDark = document.getElementById("dark-mode");
+
+        let initTheme = "light";
+        if ($("html[mode=dark]").length > 0
+          || ($("html[mode]").length == 0
+            && window.matchMedia("(prefers-color-scheme: dark)").matches ) ) {
+          initTheme = "dark";
+        }
+
+        if(initTheme === "dark"){
+          uttLight.parentNode.removeChild(uttLight);
+        } else {
+          uttDark.parentNode.removeChild(uttDark);
+        }
+      </script>
+    </section>
+
 </div></span>
 </p>
 <hr style="page-break-before:always;display:none;">
