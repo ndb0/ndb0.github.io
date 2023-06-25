@@ -8,7 +8,7 @@ let saveFile = () => {
             const msg = document.getElementById("msg");
 
             // This variable stores all the data.
-            let data = "\r Name: " + name.value + " \r\n " + "Keywords: " + country.value + " \r\n " + "Message: " + msg.value;
+            let data = "\r arXiv id of associated paper: " + name.value + " \r\n " + "Keywords: " + country.value + " \r\n " + "Message: " + msg.value;
             console.log(data); //printing form data into the console
             // Convert the text to BLOB.
             const textToBLOB = new Blob([data], { type: "text/plain" });
