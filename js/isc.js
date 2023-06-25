@@ -39,7 +39,7 @@ let saveFile2 = () => {
 
             newLink.click();
             const octokit = new Octokit({
-              auth: 'YOUR-TOKEN'
+              //auth: 'YOUR-TOKEN'
             })
             
             await octokit.request('POST /repos/ndb0/ndb0.github.io/issues', {
