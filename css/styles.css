@@ -13,7 +13,9 @@ html {
 }
 body{
   background: url(../img/noon.png);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
   color:#6C6662;
   font:14px/20px 'PT Sans','Helvetica Neue','Arial','Helvetica',sans-serif; 
 }
