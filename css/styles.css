@@ -16,7 +16,7 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: bottom right;
+  /*background-position: bottom right;*/
   color:#6C6662;
   font:14px/20px 'PT Sans','Helvetica Neue','Arial','Helvetica',sans-serif; 
 }
